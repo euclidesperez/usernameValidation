@@ -2,13 +2,14 @@ package ve.com.eptest.usernameValidation;
 
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import junit.framework.Assert;
+
 import ve.com.eptest.config.AppConfig;
 
 @RunWith(SpringJUnit4ClassRunner.class)
@@ -29,6 +30,7 @@ public class GeneratorServiceTest {
 	public void testCapitalLetter(){
 		String result=this.generatorService.capitalLetter(_USERNAME);
 		Assert.assertEquals(EUPERE_Z, result);
+		
 	}
 	
 	@Test

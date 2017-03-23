@@ -10,9 +10,9 @@ import org.springframework.core.env.Environment;
 @Configuration
 @ComponentScan(basePackages={"ve.com.eptest.usernameValidation"})
 @PropertySources({
-	@PropertySource("classpath:username.properties"),
-	@PropertySource("classpath:reserveWords.properties"),
-	@PropertySource("classpath:altern.properties")
+	@PropertySource("classpath:/username.properties"),
+	@PropertySource("classpath:/reserveWords.properties"),
+	@PropertySource("classpath:/altern.properties")
 })
 public class AppConfig {
 	@Autowired
